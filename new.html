@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>miBand demo</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="new.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+  <script src="js/band.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+<section class="start-section">
+  <h1>Let's make some magic</h1>
+  <button class="connect-btn">Connect</a>
+</section>
+<section class="general-info-section hidden">
+  <h2>General Info</h2>
+  <div class="data-container">
+    <div class="data-cell device-name">
+      <p>Device name</p>
+      <p class="value"></p>
+    </div>
+    <div class="data-cell firmware-version">
+      <p>Firmware Version</p>
+      <p class="value"></p>
+    </div>
+    <div class="data-cell profileVersion">
+      <p>Profile Version</p>
+      <p class="value"></p>
+    </div>
+    <div class="data-cell ble-latency">
+      <p>BLE Latency</p>
+      <p class="value"></p>
+    </div>
+    <div class="data-cell ble-connectionInterval">
+      <p>BLE Connection Interval</p>
+      <p class="value"></p>
+    </div>
+  </div>
+</section>
+<section class="battery-section hidden">
+  <h2>Battery Data</h2>
+  <div class="data-container">
+    <div class="data-cell last-charge">
+      <p>Last Charge</p>
+      <p class="value"></p>
+    </div>
+    <div class="data-cell charges">
+      <p>Amount of charges</p>
+      <p class="value"></p>
+      <p>times</p>
+    </div>
+    <div class="data-cell status">
+      <p>Status</p>
+      <p class="value"></p>
+    </div>
+  </div>
+  <div class="canvas-wrapper">
+    <p>Charge, %</p>
+    <canvas id="batteryLevel"></canvas>
+  </div>
+</section>
+<section class="steps-section hidden">
+  <h2>Steps Count</h2>
+  <h2 class="steps">
+    <span class="value">0</span>
+    step(s)
+  </h2>
+</section>
+</body>
+</html>

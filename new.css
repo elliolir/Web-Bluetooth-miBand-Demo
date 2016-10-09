@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #3b4145;
+}
+
+section {
+  padding: 50px 0;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: solid 1px white;
+}
+
+section.hidden {
+  display: none;
+}
+
+.start-section {
+  background-image: url("./img/polygon-background5.jpg");
+  background-size: cover;
+  background-attachment:fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  justify-content: center;
+  padding: 0 50px;
+  height: calc(100vh - 1px);
+  min-height: 100%;
+}
+
+.start-section h1{
+  font: 300 4em/2 'Oswald', sans-serif;
+}
+
+.start-section .connect-btn{
+  display: inline-block;
+  transition: .3s;
+  border: none;
+  border-radius: 5px;
+  font: bold 25px 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  background: white;
+  padding: 10px 20px;
+}
+.start-section .connect-btn:active {
+  box-shadow: inset 0px 0px 31px -5px rgba(0,0,0,0.49);
+}
+
+.start-section .connect-btn:active,  .start-section .connect-btn:focus{
+  border: none;
+  outline:none;
+}
+
+h2 {
+  font: 300 2.5em/2 'Oswald', sans-serif;
+}
+
+p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  margin: 5px;
+}
+
+p.value {
+  font: 300 27px 'Oswald', sans-serif;
+}
+
+.battery-section .value {
+  color: #15aabf;
+}
+
+.general-info-section .value {
+  color: #de2d2d;
+}
+
+.general-info-section .data-cell {
+  width: 15%;
+}
+
+.data-container {
+  width: 100%;
+  text-align: center;
+}
+
+.data-cell {
+  display: inline-block;
+  width: 20%;
+  margin: 0 20px;
+  vertical-align: top;
+}
+
+.canvas-wrapper {
+  text-align: center;
+  margin-top: 50px;
+  /*width: 300px;
+  height: 300px;*/
+  width: 50%;
+  height: 50%;
+}
+
+.canvas-wrapper p{
+  margin-bottom: 15px;
+}
+
+.steps-section h2 {
+  margin-bottom: 0;
+}
+
+.steps-section .steps {
+  margin-top: 10px;
+}
+
+
+.steps-section .steps .value{
+  color: #fd7e14;
+  display: block;
+  text-align: center;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
